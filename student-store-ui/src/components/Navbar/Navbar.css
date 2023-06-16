@@ -1,0 +1,30 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(35, 33, 33);
+}
+
+
+#codepathImg{
+    width:95px;
+    height: auto;
+}
+ .navButtons{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color:azure;
+    padding: 30px;
+
+ }
+ .navButtons li a:hover{
+    color:rgb(73, 233, 156);
+    transform: scale(1.1);
+    transition: 0.5s;
+
+ }
+ .navButtons li {
+    margin-right: 40px;
+
+  }

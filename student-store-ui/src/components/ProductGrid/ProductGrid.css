@@ -1,0 +1,19 @@
+.productGrid img{
+    width:250px;
+    height:250px;
+   
+}
+.productGrid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    
+
+}
+.productGrid li {
+    margin: 15px; /* Adjust the value as per your preference */
+    border: 1px solid black;
+  }
+  
