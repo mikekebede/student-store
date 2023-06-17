@@ -1,13 +1,15 @@
 import * as React from "react"
 import { useState, useEffect} from "react";
 import "./ProductCard.css"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 
 
 export default function ProductCards(prop) {
     
  
   return (
-    <section className="productcard">
+
+    <Link to={`/products/${prop.product.id}`}>
       {<div className="product-card">
             <div key={prop.product.id}>
             <li key={prop.product.name}>
@@ -18,6 +20,7 @@ export default function ProductCards(prop) {
             </div>
     
       </div> }
-    </section>
+    
+    </Link>
   )
 }

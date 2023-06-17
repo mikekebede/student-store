@@ -6,7 +6,7 @@ import Sidebar from "../Sidebar/Sidebar"
 import Home from "../Home/Home"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import ProductGrid from "../ProductGrid/ProductGrid";
-import Hero from "../Hero/Hero"
+import ProductDetail from "../ProductDetail/ProductDetail";
 import axios from "axios"
 import "./App.css"
 
@@ -26,18 +26,26 @@ export default function App() {
   })
   }, []);
   return (
+    <div>
     <div className="app">
       <BrowserRouter>
         <main>
           {/* YOUR CODE HERE! */}
           <Navbar />
-          <Sidebar />
-          <Home />
+      
+          
           {/* <Search/> */}
-    
-          <ProductGrid products={products}/>
+         < Routes>
+          <Route/>   
+          <Route path="/" element = {<Home products = {products}/>}/>
+          <Route path="/products/:productId" element={<ProductDetail products = {products}/>} />
+        </Routes>
+          
         </main>
+        
+
       </BrowserRouter>
+    </div>
     </div>
   )
 }

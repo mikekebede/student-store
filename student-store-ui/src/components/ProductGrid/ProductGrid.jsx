@@ -16,15 +16,18 @@ export default function ProductGrid(props) {
     event.preventDefault();
     setCategoryData(event.target.value)
 
-   
+   if (event.target.value ==="allcategories" ){
+    setFilteredData(productsresult)
+   }else{
 
     let filteredProducts = productsresult.filter((item) =>
         item.category.toLowerCase().includes(event.target.value))   
-    console.log(searchTerm)
+   
     filteredProducts = filteredProducts.filter((searchItem)=> 
      searchItem.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    console.log(filteredProducts)
+  
     setFilteredData(filteredProducts)
+   }
   }
 
   const handleSearch = (event) => {
@@ -48,12 +51,13 @@ export default function ProductGrid(props) {
 
   return (
     <div className="gridSearch">
-      <div className="search">
+      <div className="itemsearch">
         <input
+          id="searchInput"
           type="text"
           value={searchTerm}
           onChange={handleSearch}
-          placeholder="Enter search query..."
+          placeholder="Enter Item Name"
         />
       </div>
 
@@ -61,11 +65,11 @@ export default function ProductGrid(props) {
 
       <div className="category">
         <ul className="catagoryButtons">
-          <button onClick={ (event) =>{ handleClick(event)} }>All Categories</button>
-          <button onClick={ (event) =>{ handleClick(event)}}  value="clothing">Clothing</button>
-          <button onClick={ (event) =>{ handleClick(event)} } value="food">Food</button>
-          <button onClick={ (event) =>{ handleClick(event)} } value="accessories">Accessories</button>
-          <button onClick={ (event) =>{ handleClick(event)} } value="tech">Tech</button>
+          <button className="catagorybtn" onClick={ (event) =>{ handleClick(event)}} value= "allcategories">All Categories</button>
+          <button className="catagorybtn"  onClick={ (event) =>{ handleClick(event)}}  value="clothing">Clothing</button>
+          <button className="catagorybtn"  onClick={ (event) =>{ handleClick(event)} } value="food">Food</button>
+          <button className="catagorybtn" onClick={ (event) =>{ handleClick(event)} } value="accessories">Accessories</button>
+          <button className="catagorybtn" onClick={ (event) =>{ handleClick(event)} } value="tech">Tech</button>
         </ul>
       </div>
 
@@ -74,16 +78,14 @@ export default function ProductGrid(props) {
 
 
 
-
-
       <div className="productGrid">
-        {searchTerm === ""? 
-            productsresult.map((productItem, index) => (
+        {  filteredData.length !== 0?
+            
+            filteredData.map((productItem, index) => (
               <ProductCards key={index} product={productItem} />
             ))
-          : filteredData.map((productItem, index) => (
-              <ProductCards key={index} product={productItem} />
-            ))}
+        : productsresult.map((productItem, index) => (
+            <ProductCards key={index} product={productItem} />))}
       </div>
     </div>
   );

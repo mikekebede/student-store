@@ -15,5 +15,43 @@
 .productGrid li {
     margin: 15px; /* Adjust the value as per your preference */
     border: 1px solid black;
+    background-color: #ff6e40;
+    list-style-type: none;
   }
-  
+  .itemsearch{
+    color:antiquewhite;
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+    align-self: self;}
+ #searchInput{
+    width:900px;
+    height:60px;
+ }   
+.catagorybtn{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #eaeaea;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+}
+.catagorybtn:hover {
+    background-color: #ccc;
+  }
+.catagoryButtons{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+}
+.catagorybtn{
+
+    font-size: 18px;
+    height:30px auto;
+    width:50px auto;
+}
