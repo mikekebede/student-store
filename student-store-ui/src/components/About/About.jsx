@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="about" id="about">
         <div className="content">
-            <h2>About Us</h2>
+            <h3>About Us</h3>
             <div className="summary">
                 <div className="text">
                     <p>The codepath student store offers great products at great prices from a great team and for a great cause.</p>
