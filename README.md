@@ -12,6 +12,11 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 
 ## *Week 2* Application Features
 
+<a href="https://www.loom.com/share/e870ea4427e24d9aab427dc8bbdc3fa0">
+    Student Store - 19 June 2023 - Watch Video
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e870ea4427e24d9aab427dc8bbdc3fa0-with-play.gif">
+  </a>
+
 ### Core Features
 
 - [X] The website displays header, banner, search, product grid, about, contact, and footer section.
