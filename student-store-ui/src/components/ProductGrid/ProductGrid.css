@@ -1,23 +1,12 @@
-.productGrid img{
-    width:300px auto;
-    height:300px auto;
-   
-}
+
 .productGrid{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
     list-style-type: none;
-    
-    
-
 }
-.productGrid li {
-    margin: 15px; /* Adjust the value as per your preference */
-    border: 1px solid black;
-    background-color: rgb(183, 154, 24);
-  }
+
   .itemsearch{
     color:antiquewhite;
     font-size: 100px;

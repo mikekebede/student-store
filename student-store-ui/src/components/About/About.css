@@ -1,46 +1,47 @@
-.about {
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .summary {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .text {
-    max-width: 60%;
-  }
-  
-  .text p {
-    margin-bottom: 10px;
-  }
-  
-  img {
-    max-width: 40%;
-    border-radius: 8px;
-  }
-  .text p {
-    margin-bottom: 10px;
-    color: #333333;
-  }
-  
-  /* Add any additional styles or animations as desired */
-  
+.about{
+
+  font-family: Sans-Serif;
+  justify-content:center;
+  padding:40px;
+  align-items: center;
+  background-color:#ffc13b;
+  color:white;
+  border-top: 0px;
+  border-radius: 8%;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom: 2%;
+
+}
+.content{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+.text p{
+  font-size: 20px; 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.text {
+  flex: 1; /* Add this line to make the text occupy available space */
+}
+
+.text p {
+  font-size: 20px;
+}
+
+.codepathabout {
+  max-width: 30%; /* Adjust the value to control the image size */
+  margin-left: 20px; /* Add some margin to separate the image from the text */
+  border-radius:9%;
+}

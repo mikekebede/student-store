@@ -1,19 +1,12 @@
 .product-card img{
-    width:250px;
-    height:250px;
-   
-}
-.product-card{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    list-style-type: none;
-    
+    width:400px;
+    height:400px;}
 
-}
+
+
 .product-card li {
     margin: 15px; /* Adjust the value as per your preference */
     border: 1px solid black;
+    list-style-type: none;
   }
   

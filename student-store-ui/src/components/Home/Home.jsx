@@ -4,6 +4,7 @@ import ProductGrid from "../ProductGrid/ProductGrid"
 import Hero from "../Hero/Hero"
 import About from "../About/About"
 import ContactUs from "../ContactUs/ContactUs"
+import Footer from "../Footer/Footer"
 
 export default function Home(props) {
   return (
@@ -13,6 +14,7 @@ export default function Home(props) {
       <ProductGrid products={props.products}/>
       <About/>
       <ContactUs/>
+      <Footer/>
     </div>
     </>
   )

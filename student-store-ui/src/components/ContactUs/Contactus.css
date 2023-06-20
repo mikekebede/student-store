@@ -1,44 +1,31 @@
-#contact {
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .summary {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .info {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .info li {
-    margin-bottom: 10px;
-  }
-  
-  .label {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  span {
-    font-size: 16px;
-  }
-  
-  /* Add animations or transitions if desired */
-  
+.contact{
+  font-family: Sans-Serif;
+  justify-content:center;
+  padding:40px;
+  align-items: center;
+  background-color:#1e3d59;
+  color:white;
+  border-top: 0px;
+  border-radius: 8%;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom: 2%;
+}
+.summary{
+  font-size: 20px;
+}
+
+.student {
+  justify-content: right;
+  max-width: 40%; /* Adjust the value to control the image size */
+  margin-left: 20px; /* Add some margin to separate the image from the text */
+  border-radius:40%;
+}
+.info{
+  padding:90px;
+}
+.info li{
+  font-size: 20px;
+  padding-bottom:30px;
+  list-style-type: none;
+}

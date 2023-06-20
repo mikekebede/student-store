@@ -1,0 +1,44 @@
+.footer{
+    background-color: white;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    padding-top:30px;
+}
+
+.links {
+    display: flex;
+    color: black;
+    
+  }
+  
+  .link-column {
+    flex: 1;
+    margin-right: 20px;
+    
+  }
+  .link-column ul{
+    list-style-type: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    
+  }
+  .footer .content .top .links .link-column h4 {
+    margin-bottom: 10px;
+}
+.footer .content .top {
+    flex: 1;
+    padding-top: 40px;
+}
+.link-column ul li {
+
+    margin-bottom: 5px;
+    font-size: 17px; /* Adjust the font size as desired */
+  }
