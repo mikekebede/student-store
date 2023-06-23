@@ -16,7 +16,7 @@ import "./App.css"
 export default function App() {
 
   const [shoppingCart, setShoppingCart]=useState([])
-  console.log(shoppingCart)
+ 
 
   const [products,setProducts]=useState([]);
 
