@@ -5,7 +5,7 @@ import {useParams} from "react-router-dom"
 
 
 export default function ProductView(props) {
-console.log(props.products)
+
 let products = props.products
 const {productId} = useParams(); 
  
@@ -13,9 +13,9 @@ let product=products.filter((product)=>
   product.id == productId 
 
   )
-  console.log(product)
+ 
   product = product[0]  
-  console.log(product)
+ 
   return (
       <div>
      <ProductCard class="productviewcard" shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} product={products}/>

@@ -13,6 +13,7 @@ export default function ProductGrid(props) {
   // const addToCart=(productid)=>{
      
 
+
     
 
   // }
@@ -83,10 +84,10 @@ export default function ProductGrid(props) {
         {  filteredData.length !== 0?
             
             filteredData.map((productItem, index) => (
-              <ProductCards shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} key={productItem.id} product={productItem} />
+              <ProductCards shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} key={productItem.id} product={productItem} />
             ))
         : productsresult.map((productItem, index) => (
-            <ProductCards key={productItem.id} product={productItem} />))}
+            <ProductCards shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} key={productItem.id} product={productItem} />))}
       </div>
     </div>
   );

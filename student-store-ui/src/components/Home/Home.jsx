@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer"
 import Navbar from "../Navbar/Navbar"
 
 export default function Home(props) {
+  
   return (
     <>
     <div className="home">
@@ -16,7 +17,7 @@ export default function Home(props) {
               
       <Hero />
 
-      <ProductGrid shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} id="gridview" products={props.products}/>
+      <ProductGrid shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} id="gridview" products={props.products}/>
       
       <About/>
       <ContactUs/>

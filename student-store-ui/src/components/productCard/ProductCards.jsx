@@ -6,31 +6,45 @@ import ShoppingCart from "../ShoppingCart/ShoppingCart";
 
 
 export default function ProductCards(prop) {
-    const shoppingCartList=prop.shoppingcart
+    const shoppingCartList=prop.shoppingCart
     const setShoppingCartList= prop.setShoppingCart
-    const [itemCount, setItemcount]=useState(0)
- 
-    // const addToCart = (product) => {
-    //   const item= shoppingCartList.find(item=>item.id!=product.id)
-    //   let newItem
-    //   if(item==null){
-    //     newItem={unit:product, quantity:1}
-    //     setShoppingCartList(shoppingCartList.concat(newItem))
-    //     console.log(shoppingCartList) 
-    //   }
-    //   else{
-    //     newItem= {...shoppingCartList}
+   
+    
+
+     const addToCart = (product) => {
+     let checkProduct= shoppingCartList.find(item=>item.id===product.id)
+     let newItem
+     if(!checkProduct){
+      newItem={productItem:product, quantity:1}
+      setShoppingCartList([...shoppingCartList,newItem])
+      }
+      else{
+       newItem=[...shoppingCartList]
+       newItem.forEach(item=>{
+        if(item.id===product.id){
+          item.quantity+=1
+        }
+       })
+       setShoppingCartList(newItem)
+      
+      }
+      
+      }
+
+      const removeFromCart=(product)=>{
+        let checkProduct= shoppingCartList.find(item=>item.id===product.id)
+        console.log(checkProduct)
 
 
-    //   }
 
 
 
-    //}
+      }
+      
  
   return (
 
-    
+   
       <div className="product-card">
             <div key={prop.product.id}>
             <li key={prop.product.name}>
@@ -38,7 +52,7 @@ export default function ProductCards(prop) {
              <p key={prop.product.name}>{prop.product.name}</p>
              <p key={prop.product.price}>{prop.product.price}</p>
              <div className="itemCountview">
-             {/* <button onClick={addToCart(prop.product)}>+</button> */}
+              <button onClick={() => addToCart(prop.product)}>+</button>  
 {/*             
              <button onClick={removeFromCart(prop.product)}>-</button>
                */}

@@ -9,7 +9,7 @@ export default function ProductDetail(props) {
 
     return(
         <div>
-            {props.products && <ProductView shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} products={props.products}/>}
+            {props.products && <ProductView shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} products={props.products}/>}
        
         </div>
     )

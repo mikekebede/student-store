@@ -16,6 +16,7 @@ import "./App.css"
 export default function App() {
 
   const [shoppingCart, setShoppingCart]=useState([])
+  console.log(shoppingCart)
 
   const [products,setProducts]=useState([]);
 
@@ -36,12 +37,12 @@ export default function App() {
               
             
               <Routes>
-                <Route path="/" element={<Home shoppingcart={shoppingCart} setShoppingCart={setShoppingCart}  className="home-view" products={products} />} />
-                <Route path="/products/:productId" element={<ProductDetail  shoppingcart={shoppingCart} setShoppingCart={setShoppingCart} products={products} />} />
+                <Route path="/" element={<Home shoppingCart={shoppingCart} setShoppingCart={setShoppingCart}  className="home-view" products={products} />} />
+                <Route path="/products/:productId" element={<ProductDetail shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} products={products} />} />
               </Routes>
               
             </main>
-            <Sidebar shoppingcart={shoppingCart} setShoppingCart={setShoppingCart} />
+            <Sidebar shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
           </BrowserRouter>
           
         </div>
