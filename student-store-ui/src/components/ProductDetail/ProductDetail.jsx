@@ -9,13 +9,11 @@ export default function ProductDetail(props) {
 
     return(
         <div>
-            {props.products && <ProductView products={props.products}/>}
-        {/* // <ProductView products={props.products}/> */}
+            {props.products && <ProductView shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} products={props.products}/>}
+       
         </div>
     )
    
-    //const { height, weight, sprites } = pokemonDetails;
-  
     
   
 }

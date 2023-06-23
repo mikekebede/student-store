@@ -8,11 +8,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import ProductGrid from "../ProductGrid/ProductGrid";
 import ProductDetail from "../ProductDetail/ProductDetail";
 import axios from "axios"
+
 import "./App.css"
 
 
 
 export default function App() {
+
+  const [shoppingCart, setShoppingCart]=useState([])
 
   const [products,setProducts]=useState([]);
 
@@ -26,26 +29,22 @@ export default function App() {
   })
   }, []);
   return (
-    <div>
-    <div className="app">
-      <BrowserRouter>
-        <main>
-          {/* YOUR CODE HERE! */}
-          <Navbar />
-      
+      <div>
+        <div className="app">
+          <BrowserRouter>
+            <main>
+              
+            
+              <Routes>
+                <Route path="/" element={<Home shoppingcart={shoppingCart} setShoppingCart={setShoppingCart}  className="home-view" products={products} />} />
+                <Route path="/products/:productId" element={<ProductDetail  shoppingcart={shoppingCart} setShoppingCart={setShoppingCart} products={products} />} />
+              </Routes>
+              
+            </main>
+            <Sidebar shoppingcart={shoppingCart} setShoppingCart={setShoppingCart} />
+          </BrowserRouter>
           
-          {/* <Search/> */}
-         < Routes>
-          <Route/>   
-          <Route path="/" element = {<Home products = {products}/>}/>
-          <Route path="/products/:productId" element={<ProductDetail products = {products}/>} />
-        </Routes>
-          
-        </main>
-        
-
-      </BrowserRouter>
-    </div>
-    </div>
-  )
+        </div>
+      </div>
+    );
 }

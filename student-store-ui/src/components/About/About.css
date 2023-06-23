@@ -44,4 +44,5 @@
   max-width: 30%; /* Adjust the value to control the image size */
   margin-left: 20px; /* Add some margin to separate the image from the text */
   border-radius:9%;
+  object-position: -20% 0;
 }

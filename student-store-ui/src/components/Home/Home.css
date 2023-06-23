@@ -1,3 +1,14 @@
 .home{
+    display: flex;
+    flex-direction: column;
     background-color: #f5f0e1;
+
+
+}
+.hero_home{
+    width:relative
+
+}
+#gridview{
+margin-left: 200px;;
 }

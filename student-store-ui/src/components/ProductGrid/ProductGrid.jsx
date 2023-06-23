@@ -10,6 +10,15 @@ export default function ProductGrid(props) {
 
   const[categoryData, setCategoryData]=useState(productsresult)
   
+  // const addToCart=(productid)=>{
+     
+
+    
+
+  // }
+
+
+  
   
   
   const handleClick=(event)=> {
@@ -60,9 +69,6 @@ export default function ProductGrid(props) {
           placeholder="Enter Item Name"
         />
       </div>
-
-
-
       <div className="category">
         <ul className="catagoryButtons">
           <button className="catagorybtn" onClick={ (event) =>{ handleClick(event)}} value= "allcategories">All Categories</button>
@@ -73,19 +79,14 @@ export default function ProductGrid(props) {
         </ul>
       </div>
 
-
-
-
-
-
       <div className="productGrid">
         {  filteredData.length !== 0?
             
             filteredData.map((productItem, index) => (
-              <ProductCards key={index} product={productItem} />
+              <ProductCards shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} key={productItem.id} product={productItem} />
             ))
         : productsresult.map((productItem, index) => (
-            <ProductCards key={index} product={productItem} />))}
+            <ProductCards key={productItem.id} product={productItem} />))}
       </div>
     </div>
   );

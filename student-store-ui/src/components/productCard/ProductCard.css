@@ -9,4 +9,9 @@
     border: 1px solid black;
     list-style-type: none;
   }
-  
+.itemCountView{
+     display: flex;
+     flex-direction: row;
+    justify-content: space-around;
+    
+}

@@ -5,6 +5,7 @@
     justify-content: space-around;
     flex-direction: row;
     list-style-type: none;
+    margin-left: 100px;
 }
 
   .itemsearch{

@@ -1,0 +1,42 @@
+
+
+.sidebarOpen {
+  margin: 0;
+  padding: 10px;
+  width: 3%;
+  background-color:#1e3d59;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebarClosed {
+    margin: 0;
+    padding: 10px;
+    width: 25%;
+    background-color: #1e3d59;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .closedButtons {
+  margin-top: 50px;
+
+  }
+  .sidebarToggler{
+
+    width: 50px;
+    height:50px;
+    font-size: 30px;
+
+  }
+  
+  .iconButton{
+    margin-top:70px;
+    width: 50px;
+    height:50px;
+    font-size: 30px;
+  }
+  
+  
+  

@@ -18,7 +18,7 @@ let product=products.filter((product)=>
   console.log(product)
   return (
       <div>
-     <ProductCard class="productviewcard" product={product}/>
+     <ProductCard class="productviewcard" shoppingcart={props.shoppingCart} setShoppingCart={props.setShoppingCart} product={products}/>
      <p>{product.description}</p>
      </div>
         

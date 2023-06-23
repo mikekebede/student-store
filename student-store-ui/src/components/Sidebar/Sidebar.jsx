@@ -1,27 +1,46 @@
-import * as React from "react"
+import React from "react"
 import "./Sidebar.css"
+import {useState} from "react"
+import ShoppingCart from "../ShoppingCart/ShoppingCart"
+import { GiHamburgerMenu } from 'react-icons/gi';
+
+import { FiShoppingCart } from 'react-icons/fi';
+import { FaMoneyCheck } from 'react-icons/fa';
+import { IoIosPaper } from 'react-icons/io';
+
+
+
+
 
 export default function Sidebar() {
+  
+  const [sidebarOpen, setSidebar]= useState(true);  
+  const handleSidebar=()=>setSidebar(!sidebarOpen)
+  
+  
+  
   return (
-    <section className="sidebar">
-      <section class="sidebar closed">
-        <div class="wrapper">
-          <button class="toggle-button button closed">
-            <i class="material-icons md-48">arrow_forward</i>
-            </button>
-            <div class="shopping-cart">
-              <div class="cart-icons">
-                <span class="cart-icon icon button">
-                  <i class="material-icons md-48">add_shopping_cart</i>
-                  </span><span class="cart-icon icon button">
-                    <i class="material-icons md-48">monetization_on</i>
-                    </span><span class="cart-icon icon button">
-                      <i class="material-icons md-48">fact_check</i>
-                      </span>
-                      </div>
-                      </div>
-                      </div>
-                      </section>
-    </section>
+    
+    <div className={sidebarOpen? "sidebarOpen": "sidebarClosed"}>
+    <button className="sidebarToggler" onClick={handleSidebar}><GiHamburgerMenu /></button>
+    {sidebarOpen ? (
+      
+      <div className="closed">
+        <div className="closedButtons">
+        <button className="iconButton" onClick={handleSidebar}><FiShoppingCart id="fishop" /></button>
+
+        <button className="iconButton" onClick={handleSidebar}><FaMoneyCheck /></button>
+       
+        <button className="iconButton" onClick={handleSidebar}><IoIosPaper /></button>
+
+        </div>
+      </div>
+    ) : (
+      
+      <div>
+        <ShoppingCart/>
+      </div>
+    )}
+  </div>
   )
-}
+    }
