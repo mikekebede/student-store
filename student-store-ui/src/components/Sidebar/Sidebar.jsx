@@ -12,11 +12,10 @@ import { IoIosPaper } from 'react-icons/io';
 
 
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   
   const [sidebarOpen, setSidebar]= useState(true);  
   const handleSidebar=()=>setSidebar(!sidebarOpen)
-  
   
   
   return (
@@ -38,7 +37,7 @@ export default function Sidebar() {
     ) : (
       
       <div>
-        <ShoppingCart/>
+        <ShoppingCart shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart}  products={props.products}/>
       </div>
     )}
   </div>

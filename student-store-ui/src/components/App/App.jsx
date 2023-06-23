@@ -42,7 +42,7 @@ export default function App() {
               </Routes>
               
             </main>
-            <Sidebar shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
+            <Sidebar shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} products={products}/>
           </BrowserRouter>
           
         </div>

@@ -38,7 +38,7 @@ export default function ProductCards(prop) {
          let itemtoRemove
         if(checkProduct){
           itemtoRemove=[...shoppingCartList]
-          console.log(itemtoRemove)
+          
         
            itemtoRemove.forEach(item=>{
           if(item.id===product.id){
@@ -46,7 +46,7 @@ export default function ProductCards(prop) {
                 item.quantity-=1
               }
               else{
-                setShoppingCartList(itemtoRemove.filter(item=>item.quantity!==0))
+                item.quantity=0
               }
             }
           })
@@ -54,21 +54,12 @@ export default function ProductCards(prop) {
           else{
             console.log("the item is not in shopping cart")
           }
+          setShoppingCartList(shoppingCartList.filter(item=>item.quantity!=0))
           console.log(shoppingCartList)
         }
 
-
-  
-        
-
-
-
-
-      
-      
  
   return (
-
    
       <div className="product-card">
             <div key={prop.product.id}>

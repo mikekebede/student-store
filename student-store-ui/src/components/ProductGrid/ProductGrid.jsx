@@ -10,14 +10,6 @@ export default function ProductGrid(props) {
 
   const[categoryData, setCategoryData]=useState(productsresult)
   
-  // const addToCart=(productid)=>{
-     
-
-
-    
-
-  // }
-
 
   
   
