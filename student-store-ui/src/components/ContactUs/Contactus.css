@@ -3,8 +3,8 @@
   justify-content:center;
   padding:40px;
   align-items: center;
-  background-color:#1e3d59;
-  color:white;
+  background-color:#EEE2DC;
+  color:rgb(8, 7, 7);
   border-top: 0px;
   border-radius: 8%;
   margin-left:8%;
@@ -13,16 +13,20 @@
 }
 .summary{
   font-size: 20px;
+  color:rgb(8, 7, 7);
 }
+.c{color:rgb(8, 7, 7);}
 
 .student {
   justify-content: right;
   max-width: 40%; /* Adjust the value to control the image size */
   margin-left: 20px; /* Add some margin to separate the image from the text */
   border-radius:40%;
+  color:rgb(8, 7, 7);
 }
 .info{
   padding:90px;
+  color:rgb(8, 7, 7);
 }
 .info li{
   font-size: 20px;

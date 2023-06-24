@@ -1,4 +1,4 @@
-
+/* #EDC7B7    EEE2DC  BAB2B5  123C69  AC3B61, */
 .content{
     color:white;
 }
@@ -6,9 +6,10 @@
     display: flex;
     margin: 40px;
 }
+
 .hero .content {
     padding-top: 40px;
-    background: #ffc13b;
+    background: #123C69;
     max-width: 80%;
     width: 100%;
     margin: 20px auto;

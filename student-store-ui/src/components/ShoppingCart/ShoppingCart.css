@@ -1,0 +1,84 @@
+.sidebarItems{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.shoppingcartTable {
+    background-color: #B1A296;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+  }
+ 
+  .itemTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .itemTable th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .itemTable td {
+    padding: 10px;
+  }
+  
+  .itemTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .itemTable tr:hover {
+    background-color: #e8e8e8;
+  }
+  
+  .itemTable th,
+  .itemTable td {
+    border: 1px solid #ddd;
+  }
+  
+  
+  .subtotal,
+  .taxesFees,
+  .totalFee {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px
+  }
+  .payementInfo{
+    background-color: #f5f0e1;
+    border-radius: 6%;
+    padding:10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+  }
+  .payementTitle{
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+  .submitbutton {
+    background-color: #5D5C61; /* Green background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add rounded corners */
+    cursor: pointer; /* Add cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin:10px
+  }
+  
+  .submitbutton:hover {
+    background-color: #3A6B35; /* Darker green background color on hover */
+  }
+/* brownish #5D5C61, 
+ 
+lighter brownish #3A6B35 
+
+#7395AE
+
+#557A95
+
+#B1A296
+*/

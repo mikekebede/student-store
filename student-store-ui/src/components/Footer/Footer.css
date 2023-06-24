@@ -1,11 +1,16 @@
 .footer{
     background-color: white;
     color: black;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 40px;
     padding-top:30px;
-}
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top-left-radius: 1cm;
+    border-top-right-radius: 1cm;
+
+  }
 
 .links {
     display: flex;

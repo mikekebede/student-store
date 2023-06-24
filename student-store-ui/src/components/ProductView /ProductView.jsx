@@ -1,6 +1,7 @@
 import * as React from "react"
 import ProductCard from "../productCard/ProductCards"
 import {useParams} from "react-router-dom"
+import ProductCards from "../productCard/ProductCards";
 
 
 

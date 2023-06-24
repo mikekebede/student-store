@@ -54,24 +54,26 @@ export default function ProductCards(prop) {
           else{
             console.log("the item is not in shopping cart")
           }
-          setShoppingCartList(shoppingCartList.filter(item=>item.quantity!=0))
+          setShoppingCartList( shoppingCartList.filter(item=>item.quantity!=0))
           console.log(shoppingCartList)
         }
 
  
   return (
+    
    
       <div className="product-card">
             <div key={prop.product.id}>
             <li key={prop.product.name}>
+            <div className="displayCard">
             <Link to={`/products/${prop.product.id}`}><img key={prop.product.id} src={prop.product.image}/>  </Link>
-             <p key={prop.product.name}>{prop.product.name}</p>
-             <p key={prop.product.price}>{prop.product.price}</p>
+             <p class="itemname" key={prop.product.name}>{prop.product.name}</p>
+             <p class="itemPrice" key={prop.product.price}>{prop.product.price}</p>
              <div className="itemCountview">
-              <button onClick={() => addToCart(prop.product)}>+</button>  
-      
-             <button onClick={()=>removeFromCart(prop.product)}>-</button>
-               
+              <button className="purchasebuttons" onClick={() => addToCart(prop.product)}>+</button>  
+              <span>{(shoppingCartList.find(item=>item.id===prop.product.id))? (shoppingCartList.find(item => item.id === prop.product.id).quantity):("0")}  </span>
+             <button className="purchasebuttons" onClick={()=>removeFromCart(prop.product)}>-</button>
+              </div>
              </div>
             </li>
             </div>

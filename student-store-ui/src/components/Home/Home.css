@@ -1,14 +1,25 @@
 .home{
     display: flex;
     flex-direction: column;
-    background-color: #f5f0e1;
+    background-color: #c0ada5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
 }
 .hero_home{
     width:relative
+    
 
 }
 #gridview{
 margin-left: 200px;;
-}
+}/* brownish #EDC7B7    EEE2DC  BAB2B5  123C69  AC3B61, 
+ 
+lighter brownish #379683
+
+#7395AE
+
+#557A95
+
+#B1A296
+*/

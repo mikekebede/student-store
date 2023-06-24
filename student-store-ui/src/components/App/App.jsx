@@ -21,7 +21,7 @@ export default function App() {
   const [products,setProducts]=useState([]);
 
   useEffect(()=> {
-      axios.get("https://codepath-store-api.herokuapp.com/store")
+      axios.get("http://localhost:3001")
       .then((response)=>{
       setProducts(response.data.products)
   })

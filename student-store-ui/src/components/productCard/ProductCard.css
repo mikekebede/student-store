@@ -1,13 +1,23 @@
 .product-card img{
     width:400px;
-    height:400px;}
+    height:250px;
+  border-radius: 1cm;}
 
 
 
 .product-card li {
     margin: 15px; /* Adjust the value as per your preference */
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 1cm;
     list-style-type: none;
+    
+
+  }
+  .itemname{
+    padding-left:30%
+  }
+  .itemPrice{
+    padding-left: 35%;
   }
 .itemCountView{
      display: flex;
@@ -15,3 +25,15 @@
     justify-content: space-around;
     
 }
+.purchasebuttons{
+  height:50px;
+  width:50px;
+  font-size: 30px;
+  margin:70px;
+
+}
+.displayCard{
+  background-color:#EEE2DC ;
+  border-radius: 1cm;
+}
+/* #EDC7B7    EEE2DC  BAB2B5  123C69  AC3B61, *

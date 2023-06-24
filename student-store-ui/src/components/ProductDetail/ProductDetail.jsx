@@ -10,7 +10,7 @@ export default function ProductDetail(props) {
     return(
         <div>
             {props.products && <ProductView shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} products={props.products}/>}
-       
+            
         </div>
     )
    

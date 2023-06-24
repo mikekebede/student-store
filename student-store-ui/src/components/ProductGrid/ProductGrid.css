@@ -19,6 +19,11 @@
     height:60px;
  }   
 .catagorybtn{
+        margin-top: 10px;
+        width:auto;
+        font-size: 50px;
+        color: #ffc13b;
+        height:50px;
         display: inline-block;
         padding: 10px 20px;
         background-color: #eaeaea;
@@ -45,3 +50,5 @@
     height:30px auto;
     width:50px auto;
 }
+/* 
+#EDC7B7    EEE2DC  BAB2B5  123C69  AC3B61, */
